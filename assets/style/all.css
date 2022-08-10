@@ -572,6 +572,10 @@ select {
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+    header a{
+        font: 20px sans-serif;
+        line-height:1.2 ;
+    }
 
 *, ::before, ::after {
   --tw-translate-x: 0;
@@ -620,6 +624,36 @@ select {
 .m-auto {
   margin: auto;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
 .block {
   display: block;
 }
@@ -631,15 +665,51 @@ select {
 .contents {
   display: contents;
 }
+.hidden {
+  display: none;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
 .w-20 {
   width: 5rem;
 }
 .w-1\/2 {
   width: 50%;
 }
+.w-6 {
+  width: 1.5rem;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-1 {
+  width: 0.25rem;
+}
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .border {
   border-width: 1px;
@@ -652,6 +722,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(170 6 1 / var(--tw-bg-opacity));
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -660,6 +734,18 @@ select {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.px-\[13px\] {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -667,39 +753,57 @@ select {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-bold {
   font-weight: 700;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
+.leading-7 {
+  line-height: 1.75rem;
+}
+.leading-normal {
+  line-height: 1.5;
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(170 6 1 / var(--tw-text-opacity));
+}
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(170 6 1 / var(--tw-text-opacity));
 }
+
+.hover\:opacity-60:hover {
+  opacity: 0.6;
+}
+
 @media (min-width: 551px) {
 
   .phone\:m-0 {
     margin: 0px;
-  }
-
-  .phone\:-mx-8 {
-    margin-left: -2rem;
-    margin-right: -2rem;
-  }
-
-  .phone\:-mx-7 {
-    margin-left: -1.75rem;
-    margin-right: -1.75rem;
   }
 
   .phone\:-mx-5 {
@@ -712,14 +816,67 @@ select {
     margin-right: -0.75rem;
   }
 
+  .phone\:-mx-6 {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .phone\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .phone\:ml-auto {
+    margin-left: auto;
+  }
+
+  .phone\:mr-auto {
+    margin-right: auto;
+  }
+
+  .phone\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .phone\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .phone\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
+  .phone\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .phone\:block {
+    display: block;
+  }
+
+  .phone\:inline {
+    display: inline;
+  }
+
   .phone\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
+  .phone\:hidden {
+    display: none;
+  }
+
   .phone\:w-auto {
     width: auto;
+  }
+
+  .phone\:w-10 {
+    width: 2.5rem;
+  }
+
+  .phone\:w-8 {
+    width: 2rem;
   }
 
   .phone\:items-center {
@@ -748,14 +905,9 @@ select {
     padding-right: 1.25rem;
   }
 
-  .phone\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .phone\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+  .phone\:py-\[26px\] {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .phone\:px-3 {
@@ -763,74 +915,27 @@ select {
     padding-right: 0.75rem;
   }
 
-  .phone\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .phone\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
-  .phone\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+  .phone\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
-  .phone\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .phone\:leading-normal {
+    line-height: 1.5;
   }
 
-  .phone\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  .phone\:leading-snug {
+    line-height: 1.375;
   }
 
-  .phone\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .phone\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .phone\:py-7 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
-  .phone\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .phone\:py-\[\] {
-    padding-top: ;
-    padding-bottom: ;
-  }
-
-  .phone\:py-\[26px\] {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
-  .phone\:hover\:bottom-1:hover {
-    bottom: 0.25rem;
-  }
-
-  .phone\:hover\:border:hover {
-    border-width: 1px;
-  }
-
-  .phone\:hover\:border-b:hover {
-    border-bottom-width: 1px;
-  }
-
-  .phone\:hover\:border-b-2:hover {
-    border-bottom-width: 2px;
-  }
-
-  .phone\:hover\:border-b-4:hover {
-    border-bottom-width: 4px;
+  .phone\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .phone\:hover\:border-b-\[6px\]:hover {
@@ -852,3 +957,24 @@ select {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
+@media (min-width: 768px) {
+
+  .laptop\:-mx-6 {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .laptop\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .laptop\:w-10 {
+    width: 2.5rem;
+  }
+
+  .laptop\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+};
