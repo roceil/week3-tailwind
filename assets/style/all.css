@@ -640,6 +640,12 @@ select {
     max-width: 768px;
   }
 }
+@media (min-width: 991px) {
+
+  .container {
+    max-width: 991px;
+  }
+}
 @media (min-width: 1292px) {
 
   .container {
@@ -658,14 +664,14 @@ select {
 .mr-2 {
   margin-right: 0.5rem;
 }
-.mr-4 {
-  margin-right: 1rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
 }
-.mb-4 {
-  margin-bottom: 1rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 .block {
   display: block;
@@ -803,6 +809,13 @@ select {
     }
   }
 
+  @media (min-width: 991px) {
+
+    .phone\:container {
+      max-width: 991px;
+    }
+  }
+
   @media (min-width: 1292px) {
 
     .phone\:container {
@@ -847,10 +860,6 @@ select {
 
   .phone\:w-8 {
     width: 2rem;
-  }
-
-  .phone\:w-4 {
-    width: 1rem;
   }
 
   .phone\:items-center {
