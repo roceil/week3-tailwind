@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    header a{
+        font: 20px sans-serif;
+        line-height:1.2 ;
+    }
+};
