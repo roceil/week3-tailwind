@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 phone:w-auto">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="bg-primary phone:flex phone:items-center phone:justify-between phone:px-9">
+    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png" alt="logo" class="w-20 py-4 m-auto phone:m-0"></a>
+    <ul class="flex flex-wrap phone:-mx-5">
+      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-5 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px] phone:hover:border-white">系列鏡框</a></li>
+      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-5 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">門市據點</a></li>
+      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-5 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">部落格</a></li>
+      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-5 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">常見問題</a></li>
+    </ul>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    footer
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
