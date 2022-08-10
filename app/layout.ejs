@@ -10,20 +10,24 @@
 </head>
 
 <body>
-  <header class="bg-primary phone:flex phone:items-center phone:justify-between phone:px-9">
-    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png" alt="logo" class="w-20 py-4 m-auto phone:m-0"></a>
-    <ul class="flex flex-wrap phone:-mx-3">
-      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px] phone:hover:border-white">系列鏡框</a></li>
-      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">門市據點</a></li>
-      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">部落格</a></li>
-      <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">常見問題</a></li>
-    </ul>
+  <header class="bg-primary ">
+    <div class="phone:container phone:flex phone:items-center phone:justify-between">
+      <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png" alt="logo" class="w-20 py-4 m-auto phone:m-0"></a>
+      <ul class="flex flex-wrap phone:-mx-3">
+        <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px] phone:hover:border-white">系列鏡框</a></li>
+        <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">門市據點</a></li>
+        <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">部落格</a></li>
+        <li class="w-1/2 phone:w-auto"><a href="#" class="block text-center text-white py-3 border border-white hover:bg-white hover:text-primary phone:px-3 phone:py-[26px] phone:border-0 phone:hover:bg-primary phone:hover:text-white phone:hover:border-b-[6px]">常見問題</a></li>
+      </ul>
+    </div>
+
   </header>
 
   <%- contents %>
 
   <footer class="bg-primary">
-    <!-- 手機版才會開啟 -->
+    <div class="phone:container">
+      <!-- 手機版才會開啟 -->
     <div class="py-6 px-[13px]">
       <div class="flex justify-between phone:hidden">
         <ul class="mb-6">
@@ -71,8 +75,8 @@
           <li><a href="#" class="phone:block phone:px-3 laptop:px-6 hover:opacity-60">常見問題</a></li>
         </ul>
         <ul class="phone:flex">
-          <li class="mr-4"><a class="hover:opacity-60" href="#"><img class="phone:w-8 laptop:w-10" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic-social-fb.png" alt="facebook"></a></li>
-          <li class="mr-4"><a class="hover:opacity-60" href="#"><img class="phone:w-8 laptop:w-10" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_ig.png" alt="instagram"></a></li>
+          <li class="mr-2"><a class="hover:opacity-60" href="#"><img class="phone:w-8 laptop:w-10" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic-social-fb.png" alt="facebook"></a></li>
+          <li class="mr-2"><a class="hover:opacity-60" href="#"><img class="phone:w-8 laptop:w-10" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_ig.png" alt="instagram"></a></li>
           <li><a class="hover:opacity-60" href="#"><img class="phone:w-8 laptop:w-10" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_line.png" alt="line"></a></li>
         </ul>
       </div>
@@ -94,8 +98,9 @@
           <a class="text-white block hover:opacity-60 phone:text-sm" href="#" >服務條款</a>
         </div>
       </div>
-
     </div>
+    </div>
+    
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>

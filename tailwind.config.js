@@ -1,6 +1,11 @@
 module.exports = {
   content: ["./app/**/*.{html,ejs}"],
   theme: {
+    container: {
+      center: true,
+      padding:'13px',
+    },
+
     screens: {
       'phone': '551px',
       // => @media (min-width: 551px)
@@ -8,8 +13,8 @@ module.exports = {
       'laptop': '768px',
       // => @media (min-width: 768px)
 
-      'desktop': '992px',
-      // => @media (min-width: 992px)
+      'desktop': '1292px',
+      // => @media (min-width: 1292px)
     },
     extend: {
       colors:{
